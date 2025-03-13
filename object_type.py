@@ -2,11 +2,11 @@ from enum import Enum
 import re
 
 class ObjectType(Enum):
-    ALPHABETICAL = 0
-    REAL_NUMBER = 1
-    INTEGER = 2
-    ALPHA_NUMERIC = 3
-    
+    ALPHABETICAL = "Alphabetical"
+    REAL_NUMBER = "Real Number"
+    INTEGER = "Integer"
+    ALPHA_NUMERIC = "Alpha Numeric"
+
     @staticmethod
     def get_from_object(object):
         if re.match(r'^[a-zA-Z]+$', object):

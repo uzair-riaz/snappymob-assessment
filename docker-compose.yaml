@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  random-objects-identifier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: random-objects-identifier
+    volumes:
+      - ./:/app
+    restart: "no"

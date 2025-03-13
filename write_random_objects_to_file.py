@@ -1,8 +1,7 @@
 from random_object_generator import RandomObjectGenerator
 
 def write_random_objects_to_file(file_path):
-    # target_size_in_bytes = 10 * 1024 * 1024
-    target_size_in_bytes = 1000
+    target_size_in_bytes = 10 * 1024 * 1024
 
     with open(file_path, "w") as file:
         current_size = 0
